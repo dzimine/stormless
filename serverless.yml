@@ -1,0 +1,26 @@
+service: stormless
+
+provider:
+  name: aws
+  runtime: python2.7
+
+functions:
+  InviteSlack:
+    stackstorm:
+      action: slack.users.admin.invite
+      # We call the function with the input like:
+      # '{"body": {
+      #     "first_name": "Santa",
+      #     "email": "santa@mad.russian.xmas.com"
+      #  }}'
+      input:
+        email:       "{{ input.body.email }}"
+        first_name:  "{{ input.body.first_name }}"
+      config:
+        admin: ${file(env.yml):slack}
+      output:
+        statusCode: "200"
+        body: "{{ output }}"
+
+plugins:
+  - serverless-plugin-stackstorm

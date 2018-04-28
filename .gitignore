@@ -1,0 +1,4 @@
+env.yml
+~st2
+node_modules/**
+.serverless/**
