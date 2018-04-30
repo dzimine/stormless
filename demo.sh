@@ -1,9 +1,10 @@
 #!/bin/bash
-# Uses demo-magic https://github.com/paxtonhare/demo-magic
 ########################
 # include the magic
+# from the magical demo-magic https://github.com/paxtonhare/demo-magic
+# I have it on my path and you should, too.
 ########################
-. ./demo-magic.sh
+. demo-magic
 
 DEMO_PROMPT="${GREEN}➜ ${CYAN}\W "
 PROMPT_TIMEOUT=3
@@ -26,5 +27,4 @@ pe "sls deploy"
 pe "sls invoke --function InviteSlack \ \n \
 --log \ \n \
 --data \ \n \
-'{\"body\": {\"first_name\": \"Hilary\", \"email\": \"esteetew+hilary@gmail.com\"}}'"
-
+'{\"body\": {\"first_name\": \"VLADIMIR\", \"email\": \"esteetew+VLADIMIR@gmail.com\"}}'"
