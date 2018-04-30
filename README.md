@@ -6,7 +6,7 @@ The demo is a much shorter, much simpler version of [Building a community sign-u
 
 ### Running the code:
 
-1. This is a short and simple voefollows the line of , To set things up:
+1. To set things up, clone the repo, and run:
   ```
   npm install
   ```
@@ -19,5 +19,5 @@ The demo is a much shorter, much simpler version of [Building a community sign-u
   
   ... and run `./demo.sh` to begin the magic.
 
-### Compiling the slides:
+
 
